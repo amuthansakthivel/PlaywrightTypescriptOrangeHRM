@@ -1,0 +1,23 @@
+{
+  "name": "playwrightts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pwt-test:headed": "ENVIRONMENT=prod npx playwright test --headed",
+    "pwt-test": "ENVIRONMENT=prod npx playwright test",
+    "pwt-report": "npx playwright show-report",
+    "pwt-test-staging:headed": "ENVIRONMENT=develop npx playwright test --headed",
+    "pwt-test-staging": "ENVIRONMENT=develop npx playwright test",
+    "pwt-report-staging": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "amuthan-sakthivel",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.34.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.1"
+  }
+}
